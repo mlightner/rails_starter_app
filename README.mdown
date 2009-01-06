@@ -2,11 +2,31 @@
 
 Base Rails application with commonly-used plugins and a few other handy things.
 
-If you're using MySQL, you can simply type:
+#### Setting Up Databases ####
+
+If you're using MySQL, after setting up config/database.yml, you can simply type:
 
     sudo rake mysql_setup:full
 
-after setting up config/database.yml and all of your databases and a user with proper access rights will be created.
+This will setup all three databases for your app using the specified DB prefix as well as add the user you configured.
+
+#### Included Migrations ####
+
+This app includes three migrations to get things started:
+
+* Migration to add the users table
+* Migration to add the user_sessions table
+* Migration to add the logged exceptions table
+
+#### Application Configuration ####
+
+The file *config/application_config.yml* can be used to define global configuration for your application (values can be overridden
+on a per-environment basis).  To access a configuration value from anywhere in the app, simply type:
+
+    property(:the_property)
+
+
+
 
 ## Installed Plugins ##
 
@@ -15,6 +35,9 @@ after setting up config/database.yml and all of your databases and a user with p
 * Enhanced console
 * Active scaffold
 * HAML (requires gem install)
+* Annotate models
+* Exception logger
+* Application config
 
 ## Preconfigured For ##
 
