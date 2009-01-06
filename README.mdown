@@ -1,4 +1,4 @@
-= Base Rails Application
+# Base Rails Application #
 
 Base Rails application with commonly-used plugins and a few other handy things.
 
@@ -8,7 +8,7 @@ If you're using MySQL, you can simply type:
 
 after setting up config/database.yml and all of your databases and a user with proper access rights will be created.
 
-== Installed Plugins
+## Installed Plugins ##
 
 * Acts as state machine
 * Fancy rake
@@ -16,7 +16,7 @@ after setting up config/database.yml and all of your databases and a user with p
 * Active scaffold
 * HAML (requires gem install)
 
-== Preconfigured For
+## Preconfigured For ##
 
 * Authlogic (requires gem install)
 * Searchlogic (requires gem install)
