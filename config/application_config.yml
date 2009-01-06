@@ -1,0 +1,11 @@
+defaults: &defaults
+  app_name: myapp
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

@@ -1,0 +1,32 @@
+fancy_rake
+==========
+
+Author: Matt Lightner
+
+Inspired by the discovery of adding rake tasks for empty strings, I created a simple plugin that
+lets you define arbitrary rake commands where the first component of the command indicates the
+function to be performed, and the second is its argument (or possibly arguments).
+
+For instance, running the following will find the string "< ActiveRecord::Base" throughout your app:
+
+  $ rake f:"< ActiveRecord::Base"
+    app/models/user.rb:1:class User < ActiveRecord::Base
+    app/models/account.rb:1:class Account < ActiveRecord::Base
+
+
+Supported features
+==================
+
+As of right now, the supported functions/features are "f" (find in app code) and "rt" (as in
+"run test").  For the latter, you supply the name of a test in one of your unit, functional
+or integration suites without the "test_" prefix and the correct test will be automatically
+found and run.
+
+
+
+Feel free to fork the projects and add functionality or enhance the architecture of the plugin!
+
+
+Original idea: http://nubyonrails.com/articles/foscon-and-living-dangerously-with-rake
+
+Copyright (c) 2008 Matt Lightner, released under the MIT license
