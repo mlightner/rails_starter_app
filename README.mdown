@@ -12,11 +12,12 @@ This will setup all three databases for your app using the specified DB prefix a
 
 #### Included Migrations ####
 
-This app includes three migrations to get things started:
+This app includes some migrations to get things started:
 
 * Migration to add the users table
 * Migration to add the user_sessions table
 * Migration to add the logged exceptions table
+* Migration to setup the virtual enumerations table
 
 #### Application Configuration ####
 
@@ -25,7 +26,10 @@ on a per-environment basis).  To access a configuration value from anywhere in t
 
     property(:the_property)
 
+#### Virtual Enumerations ####
 
+Virtual enumerations allow you to create arbitrary enumeration classes that behave like ActiveRecord models.  They can be
+configured in *virtual_enumerations.rb*.  See http://svn.protocool.com/public/plugins/enumerations_mixin/ for more information.
 
 
 ## Installed Plugins ##
@@ -38,6 +42,7 @@ on a per-environment basis).  To access a configuration value from anywhere in t
 * Annotate models
 * Exception logger
 * Application config
+* Virtual enumerations
 
 ## Preconfigured For ##
 
