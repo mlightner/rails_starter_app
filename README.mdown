@@ -4,7 +4,7 @@ Base Rails application with commonly-used plugins and a few other handy things.
 
 If you're using MySQL, you can simply type:
 
-  sudo rake mysql_setup:full
+    sudo rake mysql_setup:full
 
 after setting up config/database.yml and all of your databases and a user with proper access rights will be created.
 
