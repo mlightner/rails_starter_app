@@ -21,7 +21,7 @@ This app includes some migrations to get things started:
 
 #### Application Configuration ####
 
-The file **config/application_config.yml** can be used to define global configuration for your application (values can be overridden
+The file <strong>config/application_config.yml</strong> can be used to define global configuration for your application (values can be overridden
 on a per-environment basis).  To access a configuration value from anywhere in the app, simply type:
 
     property(:the_property)
@@ -29,7 +29,7 @@ on a per-environment basis).  To access a configuration value from anywhere in t
 #### Virtual Enumerations ####
 
 Virtual enumerations allow you to create arbitrary enumeration classes that behave like ActiveRecord models.  They can be
-configured in **config/virtual_enumerations.rb**.  See http://svn.protocool.com/public/plugins/enumerations_mixin/ for more information.
+configured in <strong>config/virtual_enumerations.rb</strong>.  See http://svn.protocool.com/public/plugins/enumerations_mixin/ for more information.
 
 
 ## Installed Plugins ##
